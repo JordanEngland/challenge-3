@@ -12,6 +12,11 @@ function generatePassword(){
     alert('Not a valid password length. Re-enter a number bewteen 8 & 128.');
     return'';
   }
+  var useLowercase = confirm('Would you like lowercase letters?');
+  var useUppercase = confirm('Would you like uppercase letters?');
+  var useNumbers = confirm('Would you like to use numbers?');
+  var useSpecial = confirm('Would you like to use special characters?');
+  
 }
 
 // Write password to the #password input
