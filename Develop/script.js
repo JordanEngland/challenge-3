@@ -16,8 +16,32 @@ function generatePassword(){
   var useUppercase = confirm('Would you like uppercase letters?');
   var useNumbers = confirm('Would you like to use numbers?');
   var useSpecial = confirm('Would you like to use special characters?');
-  
+
+
+  var passwordChars='';
+  if(useLowercase){passwordChars += lowercase;
+  }
+  if (useUppercase){passwordChars += uppercase;
+  }
+  if (useNumbers){passwordChars += numbers;
+  }
+  if (useSpecial){passwordChars += special;
+  }
+
+  var password = '';
+  for (var i =0; i<passwordLength; i++){
+    password += passwordChars.charAt(Math.floor(Math.random() * passwordChars.length));
+  }
+  return password;
+
+
 }
+
+
+
+
+
+
 
 // Write password to the #password input
 function writePassword() {

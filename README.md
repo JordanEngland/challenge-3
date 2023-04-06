@@ -52,7 +52,9 @@ The following image shows the web application's appearance and functionality:
 >
 > * A repository that only includes starter code
 
-This Challenge is graded based on the following criteria: 
+<img src="Assets\password-generator.gif" alt="gif">
+
+This Challenge is graded based on the following criteria:
 
 ### Technical Acceptance Criteria: 40%
 
